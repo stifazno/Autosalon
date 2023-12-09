@@ -109,10 +109,10 @@ header {
 }
 .textOnImage {
     overflow: hidden;
-    position: absolute; /* Абсолютное позиционирование */
-    top: 40%; /* Положение сверху, например, 50% от верхней границы родителя */
-    left: 6%; /* Положение слева, например, 50% от левой границы родителя */
-    color: white; /* Цвет текста */
+    position: absolute; 
+    top: 40%; 
+    left: 6%; 
+    color: white;
     width: 950px;
 }
 
@@ -272,8 +272,8 @@ header {
     left: 0;
     top: 50%;
     width: calc(30% - 40px);
-    height: 1px; /* Высота линии */
-    background-color: #0b0b0b; /* Цвет линии */
+    height: 1px; 
+    background-color: #0b0b0b; 
 }
 
 .textCat::after
@@ -283,8 +283,8 @@ header {
     right: 0;
     top: 50%;
     width: calc(30% - 40px);
-    height: 1px; /* Высота линии */
-    background-color: #0b0b0b; /* Цвет линии */
+    height: 1px; 
+    background-color: #0b0b0b; 
 }
 
 
@@ -307,33 +307,33 @@ header {
 
 
 
-/* Наши приемущества */
+
 .wearea{
-    text-align: center; /* Центрируем текст внутри секции */
+    text-align: center; 
     background-color: #F2F9FC;;
 }
 
 .Wearea h1 {
-    margin-bottom: 20px; /* Дополнительный отступ снизу для разделения заголовка и сетки */
+    margin-bottom: 20px; 
 }
 
 .WhyUs {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* Создаем 4 колонки */
-    gap: 20px; /* Добавляем промежутки между колонками и строками */ 
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px; 
 }
 
 .WhyUs div {
     padding: 20px;
-    border: none #ccc; /* Просто для визуализации границ элементов */
+    border: none #ccc; 
 }
 .WhyUs img{
     width: 126px;
     height: 162px;
 }
 .my-svg {
-    width: 200px; /* желаемая ширина */
-    height: 200px; /* желаемая высота */
+    width: 200px; 
+    height: 200px;
 }
 .elementor-icon-box-title{
     font-size: 24px;
@@ -352,7 +352,7 @@ header {
 
 
 
-/* Стили для мобильных устройств */
+
 @media only screen and (max-width: 908px) {
     .burger-button {
         display: block;
@@ -401,9 +401,9 @@ header {
 
 @media (max-width: 520px){
     .textOnImage {
-        top: 20%; /* Положение сверху, например, 50% от верхней границы родителя */
-        left: 6%; /* Положение слева, например, 50% от левой границы родителя */
-        color: white; /* Цвет текста */
+        top: 20%; 
+        left: 6%; 
+        color: white; 
         width: 300px;
     }
     
@@ -421,9 +421,9 @@ header {
 
 @media (max-width: 320px){
     .textOnImage {
-        top: 20%; /* Положение сверху, например, 50% от верхней границы родителя */
-        left: 6%; /* Положение слева, например, 50% от левой границы родителя */
-        color: white; /* Цвет текста */
+        top: 20%; 
+        left: 6%; 
+        color: white; 
         width: 200px;
     }
     
@@ -441,9 +441,9 @@ header {
 @media (min-width:521px) and (max-width: 980px){
     
     .textOnImage {
-        top: 20%; /* Положение сверху, например, 50% от верхней границы родителя */
-        left: 6%; /* Положение слева, например, 50% от левой границы родителя */
-        color: white; /* Цвет текста */
+        top: 20%; 
+        left: 6%; 
+        color: white; 
         width: 300px;
     }
     
@@ -470,7 +470,6 @@ header {
 
 
 
-/* для карточек */
 
 @media (max-width:1270px){
 
@@ -482,7 +481,7 @@ header {
 @media (max-width:1050px){
 
     .WhyUs {
-        grid-template-columns: repeat(4 1fr); /* Создаем 4 колонки */
+        grid-template-columns: repeat(4 1fr); 
         gap: 10px; 
     }
     .elementor-icon-box-title{
@@ -492,8 +491,8 @@ header {
         padding: 5px;
     }
     .my-svg {
-        width: 150px; /* желаемая ширина */
-        height: 150px; /* желаемая высота */
+        width: 150px; 
+        height: 150px; 
     }
 }
 
@@ -511,7 +510,7 @@ header {
         margin-left: 40px;
     }
     .WhyUs {
-        grid-template-columns: repeat(2, 1fr); /* Создаем 4 колонки */
+        grid-template-columns: repeat(2, 1fr); 
         gap: 10px; 
     }
     
@@ -523,11 +522,11 @@ header {
     }
     .WhyUs div {
         padding: 5px;
-        border: none #ccc; /* Просто для визуализации границ элементов */
+        border: none #ccc; 
     }
     .my-svg {
-        width: 100px; /* желаемая ширина */
-        height: 100px; /* желаемая высота */
+        width: 100px;
+        height: 100px; 
     }
     .product-card{
         
