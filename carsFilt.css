@@ -179,51 +179,41 @@ p {
 
 
 
-/* .select-container {
-    display: flex;
-    justify-content:center;
-    margin-bottom: 20px;
-  }
 
-
-  .select-container select {
-    padding: 10px;
-    font-size: 16px;
-  } */
 
   .bigContainer {
-    /* ваш текущий код */
+    
     display: flex;
     flex-wrap: wrap;
   }
 
   .container {
-    /* ваш текущий код */
+   
     transition: transform 0.3s ease-in-out;
   }
   
   .container:hover {
-    transform: scale(1.05); /* Увеличение размера контейнера при наведении */
+    transform: scale(1.05); 
   }
   
-  /* Добавляем стили для анимации кнопок */
+  
   .btn {
-    /* ваш текущий код */
+   
     transition: all 0.3s ease;
   }
   
   .btn:hover {
-    transform: scale(1.1); /* Изменение размера кнопки при наведении */
+    transform: scale(1.1); 
   }
   
-  /* Добавляем стили для анимации изображений */
+ 
   .banner-image {
-    /* ваш текущий код */
+    
     transition: transform 0.3s ease;
   }
   
   .banner-image:hover {
-    transform: scale(1.1); /* Увеличение размера изображения при наведении */
+    transform: scale(1.1);
   }
 
 
@@ -235,7 +225,7 @@ p {
 
 
 
-  /* Стили для контейнера */
+  
 .select-container {
   display: flex;
   justify-content: space-between;
@@ -243,7 +233,7 @@ p {
   margin: 20px auto;
 }
 
-/* Стили для каждого выпадающего списка */
+
 select {
   padding: 10px;
   font-size: 16px;
@@ -252,18 +242,18 @@ select {
   margin-right: 10px;
 }
 
-/* Дополнительные стили для улучшения внешнего вида */
+
 select:hover {
   border-color: #555;
 }
 
 select:focus {
   outline: none;
-  border-color: #007bff; /* Измените цвет, чтобы соответствовать вашей цветовой схеме */
+  border-color: #007bff; 
   box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }
 
-/* Стили для опций внутри списка */
+
 option {
   background-color: #fff;
   color: #333;
