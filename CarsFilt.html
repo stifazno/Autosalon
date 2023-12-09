@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    
+    
+    <link rel="stylesheet" href="carsFilt.css">
+    <link rel="stylesheet" href="kursov.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+   
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <!-- Бургер кнопка -->
+        <button class="burger-button" onclick="toggleNav()">☰</button>
+
+        <nav class="nav">
+            <ul class="navLi">
+                <li class="li li5"><a href="kursov.html" target="_self">Главная</a></li>
+                <li class="li li5"><a href="CarsFilt.html" target="_self">Автомобили</a></li>
+                <li class="li li2"><a href="profitableOffer.html" target="_self">Предложение</a></li>
+                <li class="li li3"><a href="garant.html">Гарантия</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <div class="select-container">
+            <select id="colorFilter">
+                <option value="all">All Colors</option>
+                <option value="black">Black</option>
+                <option value="red">Red</option>
+                <option value="white">White</option>
+                <option value="yellow">Yellow</option>
+            </select>
+    
+            <select id="brandFilter">
+                <option value="All">All Brands</option>
+                <option value="bmw">BMW</option>
+                <option value="audi">AUDI</option>
+                <option value="lamborgini">Lamborgini</option>
+                <option value="mercedes">Mercedes</option>
+                <option value="tesla">Tesla</option>
+                <option value="rollsRoyce">Rolls Royce</option>
+                <option value="ferrari">Ferrari</option>
+                <option value="bugatti">Bugatti</option>
+                <option value="nissan">Nissan</option>
+                <option value="porshe">Porshe</option>
+                <option value="jaguar">Jaguar</option>
+                <option value="bentley">Bentley</option>
+                <option value="chevrolet">Chevrolet</option>
+            </select>
+        </div>
+        
+        
+        <div class="bigContainer">
+
+          <div class="container container1" data-color="white" data-brand="audi" onclick="openCarDetails(0)">
+            <div class="wrapper">
+                <div class="banner-image image1"> </div>
+                <h1>Audi A6</h1>
+                
+            </div>
+            <div class="button-wrapper"> 
+                <button class="btn outline" onclick="openCarDetails(0)">DETAILS</button>
+                <button class="btn fill"><a href="profitableOffer.html">BUY NOW</a></button>
+            </div>
+          </div>
+
+            <div class="container container2" data-color="black" data-brand="mustang" onclick="openCarDetails(1)">
+                <div class="wrapper">
+                  <div class="banner-image image2"> </div>
+                  <h1>Shelby Mustang</h1>
+                  
+                </div>
+                <div class="button-wrapper"> 
+                  <button class="btn outline" onclick="openCarDetails(1)">DETAILS</button>
+                  <button class="btn fill"><a href="profitableOffer.html">BUY NOW</a></button>
+                </div>
+            </div>
+            
+            <div class="container container4" data-color="black" data-brand="bugatti" onclick="openCarDetails(2)">
+                <div class="wrapper">
+                  <div class="banner-image image4"> </div>
+                  <h1>Bugatti Chiron</h1>
+                  
+                </div>
+                <div class="button-wrapper"> 
+                  <button class="btn outline" onclick="openCarDetails(2)">DETAILS</button>
+                  <button class="btn fill"><a href="profitableOffer.html">BUY NOW</a></button>
+                </div>
+            </div>
+            <div class="container container5" data-color="white" data-brand="nissan" onclick="openCarDetails(3)">
+                <div class="wrapper">
+                  <div class="banner-image image5"> </div>
+                  <h1>Nissan GTR</h1>
+                  
+                </div>
+                <div class="button-wrapper"> 
+                  <button class="btn outline" onclick="openCarDetails(3)">DETAILS</button>
+                  <button class="btn fill"><a href="profitableOffer.html">BUY NOW</a></button>
+                </div>
+            </div>
+
+
+
+            <div class="container container6" data-color="white" data-brand="porshe" onclick="openCarDetails(4)">
+                <div class="wrapper">
+                  <div class="banner-image image6"> </div>
+                  <h1>Porsche 911</h1>
+                  
+                </div>
+                <div class="button-wrapper"> 
+                  <button class="btn outline" onclick="openCarDetails(4)">DETAILS</button>
+                  <button class="btn fill"><a href="profitableOffer.html">BUY NOW</a></button>
+                </div>
+            </div>
+
+            <div class="container container7" data-color="red" data-brand="jaguar" onclick="openCarDetails(5)">
+                <div class="wrapper">
+                  <div class="banner-image image7"> </div>
+                  <h1>Jaguar F-Type</h1>
+                  
+                </div>
+                <div class="button-wrapper"> 
+                  <button class="btn outline" onclick="openCarDetails(5)">DETAILS</button>
+                  <button class="btn fill"><a href="profitableOffer.html">BUY NOW</a></button>
+                </div>
+            </div>
+ 
+            <div class="container container8" data-color="black" data-brand="bentley" onclick="openCarDetails(6)">
+                <div class="wrapper">
+                  <div class="banner-image image8"> </div>
+                  <h1>Bentley GT</h1>
+                  
+                </div>
+                <div class="button-wrapper"> 
+                  <button class="btn outline" onclick="openCarDetails(6)">DETAILS</button>
+                  <button class="btn fill"><a href="profitableOffer.html">BUY NOW</a></button>
+                </div>
+            </div>
+
+            <div class="container container9" data-color="red" data-brand="audi" onclick="openCarDetails(7)">
+                <div class="wrapper">
+                  <div class="banner-image image9"> </div>
+                  <h1>Audi A7</h1>
+                  
+                </div>
+                <div class="button-wrapper"> 
+                  <button class="btn outline" onclick="openCarDetails(7)">DETAILS</button>
+                  <button class="btn fill"><a href="profitableOffer.html">BUY NOW</a></button>
+                </div>
+            </div>
+            <div class="container container10" data-color="yellow" data-brand="chevrolet" onclick="openCarDetails(8)">
+                <div class="wrapper">
+                  <div class="banner-image image10"> </div>
+                  <h1>Chevrolet</h1>
+                  
+                </div>
+                <div class="button-wrapper"> 
+                  <button class="btn outline" onclick="openCarDetails(8)">DETAILS</button>
+                  <button class="btn fill"><a href="profitableOffer.html">BUY NOW</a></button>
+                </div>
+            </div>
+
+            <div class="container container11" data-color="white" data-brand="tesla" onclick="openCarDetails(9)">
+                <div class="wrapper">
+                  <div class="banner-image image11"> </div>
+                  <h1>Tesla S</h1>
+                  
+                </div>
+                <div class="button-wrapper"> 
+                  <button class="btn outline" onclick="openCarDetails(9)">DETAILS</button>
+                  <button class="btn fill"><a href="profitableOffer.html">BUY NOW</a></button>
+                </div>
+            </div>
+
+
+            <div class="container container12" data-color="white" data-brand="rollsRoyce" onclick="openCarDetails(10)">
+                <div class="wrapper">
+                  <div class="banner-image image12"> </div>
+                  <h1>Rolls-Royce</h1>
+                  
+                </div>
+                <div class="button-wrapper"> 
+                  <button class="btn outline" onclick="openCarDetails(10)">DETAILS</button>
+                  <button class="btn fill"><a href="profitableOffer.html">BUY NOW</a></button>
+                </div>
+            </div>
+            <div class="container container13" data-color="red" data-brand="lamborgini" onclick="openCarDetails(11)">
+                <div class="wrapper">
+                  <div class="banner-image image13"> </div>
+                  <h1>Lamborghini</h1>
+                  
+                </div>
+                <div class="button-wrapper"> 
+                  <button class="btn outline" onclick="openCarDetails(11)">DETAILS</button>
+                  <button class="btn fill"><a href="profitableOffer.html">BUY NOW</a></button>
+                </div>
+            </div>
+
+            <div class="container container14" data-color="black" data-brand="audi" onclick="openCarDetails(12)">
+              <div class="wrapper">
+                <div class="banner-image image14"> </div>
+                <h1>Audi A5</h1>
+                
+              </div>
+              <div class="button-wrapper"> 
+                <button class="btn outline" onclick="openCarDetails(12)">DETAILS</button>
+                <button class="btn fill"><a href="profitableOffer.html">BUY NOW</a></button>
+              </div>
+          </div>
+
+          <div class="container container15" data-color="black" data-brand="supra" onclick="openCarDetails(13)">
+            <div class="wrapper">
+              <div class="banner-image image15"> </div>
+              <h1>McLaren P1</h1>
+             
+            </div>
+            <div class="button-wrapper"> 
+              <button class="btn outline" onclick="openCarDetails(13)">DETAILS</button>
+              <button class="btn fill"><a href="profitableOffer.html">BUY NOW</a></button>
+            </div>
+          </div>
+
+          <div class="container container16" data-color="yellow" data-brand="porshe" onclick="openCarDetails(14)">
+            <div class="wrapper">
+              <div class="banner-image image16"> </div>
+              <h1>Porsche </h1>
+             
+            </div>
+            <div class="button-wrapper"> 
+              <button class="btn outline" onclick="openCarDetails(14)">DETAILS</button>
+              <button class="btn fill"><a href="profitableOffer.html">BUY NOW</a></button>
+            </div>
+          </div>
+
+          <div class="container container17" data-color="white" data-brand="bmw" onclick="openCarDetails(15)">
+            <div class="wrapper">
+              <div class="banner-image image17"> </div>
+              <h1>BMW M6</h1>
+              
+            </div>
+            <div class="button-wrapper"> 
+              <button class="btn outline" onclick="openCarDetails(15)">DETAILS</button>
+              <button class="btn fill"><a href="profitableOffer.html">BUY NOW</a></button>
+            </div>
+          </div>
+          
+          <div class="container container18" data-color="black" data-brand="bmw" onclick="openCarDetails(16)">
+            <div class="wrapper">
+              <div class="banner-image image18"> </div>
+              <h1>BMW F30</h1>
+              
+            </div>
+            <div class="button-wrapper"> 
+              <button class="btn outline" onclick="openCarDetails(16)">DETAILS</button>
+              <button class="btn fill"><a href="profitableOffer.html">BUY NOW</a></button>
+            </div>
+          </div>
+
+          <div class="container container19" data-color="yellow" data-brand="lamborgini" onclick="openCarDetails(17)">
+            <div class="wrapper">
+              <div class="banner-image image19"> </div>
+              <h1>Lamborghini</h1>
+              
+            </div>
+            <div class="button-wrapper"> 
+              <button class="btn outline" onclick="openCarDetails(17)">DETAILS</button>
+              <button class="btn fill"><a href="profitableOffer.html">BUY NOW</a></button>
+            </div>
+          </div>
+
+          <div class="container container20" data-color="black" data-brand="mercedes" onclick="openCarDetails(18)">
+            <div class="wrapper">
+              <div class="banner-image image21"> </div>
+              <h1>Mercedes-Benz</h1>
+              
+            </div>
+            <div class="button-wrapper"> 
+              <button class="btn outline" onclick="openCarDetails(18)">DETAILS</button>
+              <button class="btn fill"><a href="profitableOffer.html">BUY NOW</a></button>
+            </div>
+          </div>
+
+
+          <div class="container container3" data-color="red" data-brand="ferrari" onclick="openCarDetails(19)">
+            <div class="wrapper">
+              <div class="banner-image image3"> </div>
+              <h1>Ferrari SF90</h1>
+              
+            </div>
+            <div class="button-wrapper"> 
+              <button class="btn outline" onclick="openCarDetails(19)">DETAILS</button>
+              <button class="btn fill"><a href="profitableOffer.html">BUY NOW</a></button>
+            </div>
+        </div>
+        </div>
+
+        
+          
+        
+
+        <footer class="footer">
+          <div class="containner">
+           <div class="row">
+             <div class="footer-col">
+               <h4>О нас</h4>
+               <ul>
+                 <li><a href="#id1">Хиты продаж</a></li>
+                 <li><a href="#id2">Каталог Автомобилей</a></li>
+                 <li><a href="#id3">Наши преимущества</a></li>
+               </ul>
+             </div>
+             <div class="footer-col">
+               <h4>Услуги</h4>
+               <ul>
+                 <li><a href="CarsFilt.html">Автомобили</a></li>
+                 <li><a href="profitableOffer.html">Предложение</a></li>
+                 <li><a href="garant.html">Гарантия</a></li>
+               </ul>
+             </div>
+             <div class="footer-col">
+               <h4>Контактная информация</h4>
+               <ul>
+                 <li><a href="#none"><p id="lor">Телефон: <strong>+7 977 111-0133</strong></p></a></li>
+                 <li><a href="#"><strong><a href="mailto:info@example.com">auto.Imperiya@gmail.com</a></strong></a></li>
+                
+               </ul>
+             </div>
+             <div class="footer-col">
+               <h4>Социальные сети</h4>
+               <div class="social-links">
+                 <a href="#"><i class="fab fa-facebook-f"></i></a>
+                 <a href="#"><i class="fab fa-twitter"></i></a>
+                 <a href="#"><i class="fab fa-instagram"></i></a>
+                 <a href="#"><i class="fab fa-linkedin-in"></i></a>
+               </div>
+             </div>
+           </div>
+          </div>
+       </footer>  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </main>
+    
+
+    <script src="kursov.js"></script>
+    <!-- <script src="imageChange.js"></script> -->
+    <script src="carsFilt.js"></script>
+    <script src="characteristic.js"></script>
+
+</body>
+</html>

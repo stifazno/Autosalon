@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+.bigContainer {
+  background: rgb(255, 255, 255);
+  display: grid;
+  align-items: center;
+  justify-content: center;  
+  grid-template-columns: 1fr 1fr 1fr 1fr;  
+  
+}
+
+.container {
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+
+  box-shadow: 0 2px 7px #dfdfdf;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);  
+  padding: 38px;  
+  filter: drop-shadow(0 30px 10px rgba(0,0,0,0.125));
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:center;
+  text-align: center;
+  
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  
+}
+
+.banner-image {
+  background-image: url(https://images.unsplash.com/photo-1641326201918-3cafc641038e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80);
+  background-position: center;
+  background-size: cover;
+  height: 300px;
+  width: 100%;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255, 0.255)
+}
+.image2 {
+    background-image: url("img/FordMustangg.png");
+}
+.image3{
+    background-image: url("img/ferari.png");
+}
+.image4{
+    background-image: url("img/bugati.png");
+}
+.image1{
+    background-image: url("img/BMWfilt.png");
+}
+.image5{
+    background-image: url("img/NissanGTR.png");
+}
+.image6{
+    background-image: url("img/porshe.png");
+}
+.image7{
+    background-image: url("img/jaguar.png");
+}
+.image8{
+    background-image: url("img/bentley.png");
+}
+.image9{
+    background-image: url("img/audiRed.png");
+}
+.image10{
+    background-image: url("img/chevrolet.png");
+}
+.image11{
+    background-image: url("img/tesla.png");
+}
+.image12{
+    background-image: url("img/RolsRoys.png");
+}
+.image13{
+    background-image: url("img/lamba.png");
+}
+.image14{
+  background-image: url("img/audiBlack.png");
+}
+.image15{
+  background-image: url("img/FerrariBlack.png");
+}
+.image16{
+  background-image: url("img/PorsheYellow.png");
+}
+.image17{
+  background-image: url("img/BMW3.png");
+}
+.image18{
+  background-image: url("img/BMW4.png");
+}
+.image19{
+  background-image: url("img/lamba3.png");
+}
+.image20{
+  background-image: url("img/lamba4.png");
+}
+.image21{
+  background-image: url("img/mers.png");
+}
+.image22{
+  background-image: url("img/PorsheYellow.png");
+}
+
+h1{
+  font-family: 'Righteous', sans-serif;
+  color: rgba(0, 0, 0, 0.98);
+  text-transform: uppercase;
+  font-size: 2.4rem;
+}
+
+p {
+  color: #000000;
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+  font-size: 0.8rem;
+  line-height: 150%;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.button-wrapper{
+  margin-top: 18px;
+}
+
+.btn {
+  text-decoration: none;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 24px;
+  font-size: 12px;
+  font-size: 0.8rem;  
+  letter-spacing: 2px;  
+  cursor: pointer;
+}
+
+.btn + .btn {
+  margin-left: 10px;
+}
+
+.outline {
+  background: transparent;
+  color: rgba(0, 212, 255, 0.9);
+  border: 1px solid rgba(0, 212, 255, 0.6);
+  transition: all .3s ease;
+  
+}
+
+.outline:hover{
+  transform: scale(1.125);
+  color: rgba(210, 38, 38, 0.9);
+  border-color: rgba(221, 25, 25, 0.9);
+  transition: all .3s ease;  
+}
+
+.fill {
+  background: rgba(0, 212, 255, 0.9);
+  color: rgba(255,255,255,0.95);
+  filter: drop-shadow(0);
+  font-weight: bold;
+  transition: all .3s ease; 
+}
+
+.fill:hover{
+  transform: scale(1.125);  
+  border-color: rgba(255, 255, 255, 0.9);
+  filter: drop-shadow(0 10px 5px rgba(0,0,0,0.125));
+  transition: all .3s ease;    
+}
+
+
+
+
+/* .select-container {
+    display: flex;
+    justify-content:center;
+    margin-bottom: 20px;
+  }
+
+
+  .select-container select {
+    padding: 10px;
+    font-size: 16px;
+  } */
+
+  .bigContainer {
+    /* ваш текущий код */
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .container {
+    /* ваш текущий код */
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .container:hover {
+    transform: scale(1.05); /* Увеличение размера контейнера при наведении */
+  }
+  
+  /* Добавляем стили для анимации кнопок */
+  .btn {
+    /* ваш текущий код */
+    transition: all 0.3s ease;
+  }
+  
+  .btn:hover {
+    transform: scale(1.1); /* Изменение размера кнопки при наведении */
+  }
+  
+  /* Добавляем стили для анимации изображений */
+  .banner-image {
+    /* ваш текущий код */
+    transition: transform 0.3s ease;
+  }
+  
+  .banner-image:hover {
+    transform: scale(1.1); /* Увеличение размера изображения при наведении */
+  }
+
+
+
+
+
+
+
+
+
+
+  /* Стили для контейнера */
+.select-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 400px;
+  margin: 20px auto;
+}
+
+/* Стили для каждого выпадающего списка */
+select {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+/* Дополнительные стили для улучшения внешнего вида */
+select:hover {
+  border-color: #555;
+}
+
+select:focus {
+  outline: none;
+  border-color: #007bff; /* Измените цвет, чтобы соответствовать вашей цветовой схеме */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Стили для опций внутри списка */
+option {
+  background-color: #fff;
+  color: #333;
+}
+
+
+
+
+
+#lor{
+  color: rgba(0, 212, 255, 0.9);
+  text-align: start; 
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

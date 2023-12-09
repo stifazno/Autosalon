@@ -1,0 +1,40 @@
+/* styles.css */
+.details-container {
+    gap: 80px;
+    display: grid;
+    
+    grid-template-columns: 1.5fr 1fr;
+}
+
+.details-container img {
+    border: 1px solid black;
+    height: auto;
+    margin-left: 40px;
+    max-width: 100%;
+    box-shadow: 2px 2px 5px #888888;
+
+}
+
+.details-container .characteristics {
+    max-width: 80%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+
+}
+.characteristics p{
+    padding: 10px;
+    font-size: 24px;
+}
+
+@media(max-width: 1145px){
+    .details-container{
+        grid-template-columns: 1fr;
+    }    
+    .details-container img {
+        margin-left: 0px ;
+    }
+    .characteristics p{
+        padding: 10px;
+        font-size: 18px;
+    }
+}

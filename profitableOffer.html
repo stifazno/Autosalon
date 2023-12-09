@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="kursov.css">
+    <link rel="stylesheet" href="profitableOffer.css">
+    
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+
+    <link href="https://fonts.googleapis.com/css?family=Arvo&display=swap" rel="stylesheet">
+
+    
+    <title>Document</title>
+</head>
+
+
+<body>
+    <header>
+        <!-- Бургер кнопка -->
+        <button class="burger-button" onclick="toggleNav()">☰</button>
+
+        <nav class="nav">
+            <ul class="navLi">
+                <li class="li li7"><a href="kursov.html" target="_self">Главная</a></li>
+                <li class="li li7"><a href="CarsFilt.html" target="_self">Автомобили</a></li>
+                <li class="li li2"><a href="#">Предложение</a></li>
+                <li class="li li2"><a href="garant.html">Гарантия</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+
+
+
+    <main>
+        <article class="offerContainer">
+                <div class="offerText">
+                    <h1><p>ПОЛУЧИТЕ ВЫГОДНОЕ ПРЕДЛОЖЕНИЕ</p><p>НА ПОКУПКУ АВТОМОБИЛЯ</p></h1>
+                </div>
+ 
+           
+            <div class="offerUnderText">
+                <p>Оставьте ваши контакты и менеджер дилерского центра перезвонит вам в ближайшее время</p>
+            </div>
+
+
+
+
+            <form action="" method="post">
+                <input type="text" class="half-width" id="carModel" name="carModel" placeholder="Модель машины" required><br>
+                <input type="text"  id="firstName" name="firstName" placeholder="Имя" required><br>
+                <input type="text"  id="lastName" name="lastName" placeholder="Фамилия" required><br>
+                <input type="email" id="email" name="email" placeholder="Email" required><br>
+                <input type="tel" id="phone" name="phone" placeholder="Телефон" required><br>
+            
+                <select class="half-width" id="city" name="city" required>
+                  <option value="moscow">Москва</option>
+                  <option value="stpetersburg">Санкт-Петербург</option>
+                  <option value="novosibirsk">Новосибирск</option>
+                  <option value="ekaterinburg">Екатеринбург</option>
+                  <option value="nnovgorod">Нижний Новгород</option>
+                  <option value="kazan">Казань</option>
+                  <option value="chelyabinsk">Челябинск</option>
+                  <option value="omsk">Омск</option>
+                  <option value="samara">Самара</option>
+                  <option value="rostov">Ростов-на-Дону</option>
+                  <option value="ufa">Уфа</option>
+                  <option value="krasnoyarsk">Красноярск</option>
+                  <option value="voronezh">Воронеж</option>
+                  <option value="irkutsk">Иркутск</option>
+                  <option value="kaliningrad">Калининград</option>
+              </select><br>
+              
+            
+              <select class="half-width" id="dealer" name="dealer" required>
+                <option value="dealer1">Элитные Автоцентры - ул. Люксембургская, 42, Мегаполис</option>
+                <option value="dealer2">Вершина Автомобилей - пр. Императорский, 88, Грандград</option>
+                <option value="dealer3">Звездные Автосалоны - ул. Бульварная, 17, Город-Звезда</option>
+                <option value="dealer4">Премиум Кар-Центры - пр. Респектабельный, 55, Элегантов</option>
+                <!-- Добавьте новые дилеры здесь -->
+            </select><br>
+            
+                <input type="submit" value="Отправить">
+            </form>
+        </article>
+
+
+
+        <footer class="footer">
+          <div class="containner">
+           <div class="row">
+             <div class="footer-col">
+               <h4>О нас</h4>
+               <ul>
+                 <li><a href="#id1">Хиты продаж</a></li>
+                 <li><a href="#id2">Каталог Автомобилей</a></li>
+                 <li><a href="#id3">Наши преимущества</a></li>
+               </ul>
+             </div>
+             <div class="footer-col">
+               <h4>Услуги</h4>
+               <ul>
+                 <li><a href="CarsFilt.html">Автомобили</a></li>
+                 <li><a href="profitableOffer.html">Предложение</a></li>
+                 <li><a href="garant.html">Гарантия</a></li>
+               </ul>
+             </div>
+             <div class="footer-col">
+               <h4>Контактная информация</h4>
+               <ul>
+                 <li><a href="#none"><p>Телефон: <strong>+7 977 111-0133</strong></p></a></li>
+                 <li><a href="#"><strong><a href="mailto:info@example.com">auto.Imperiya@gmail.com</a></strong></a></li>
+                
+               </ul>
+             </div>
+             <div class="footer-col">
+               <h4>Социальные сети</h4>
+               <div class="social-links">
+                 <a href="#"><i class="fab fa-facebook-f"></i></a>
+                 <a href="#"><i class="fab fa-twitter"></i></a>
+                 <a href="#"><i class="fab fa-instagram"></i></a>
+                 <a href="#"><i class="fab fa-linkedin-in"></i></a>
+               </div>
+             </div>
+           </div>
+          </div>
+       </footer>
+
+    </main>
+    
+
+    <script src="kursov.js"></script>
+    
+
+
+   
+
+</body>
+</html>
