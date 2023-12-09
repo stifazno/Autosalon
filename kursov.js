@@ -24,7 +24,7 @@ window.addEventListener('DOMContentLoaded', function() {
         }
     }
   
-    // Вызываем функцию при загрузке страницы и при изменении размера окна
+   
     toggleImage();
     window.addEventListener('resize', toggleImage);
 }
