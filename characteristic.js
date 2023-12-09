@@ -324,7 +324,7 @@ var carsData = [
     
     
     
-    // Добавьте данные для других машин
+   
 ];
 
 
@@ -351,10 +351,9 @@ function openCarDetails(index) {
     const razgon = car.characteristics[5].name;
     const razgonVal = car.characteristics[5].value;
 
-    // Открываем новое окно и загружаем в него characteristic.html
     var detailsWindow = window.open('characteristic.html', '_self');
 
-    // Вставляем информацию о машине сразу после открытия окна
+   
     detailsWindow.document.write(`
     <html lang="en">
     <head>
@@ -472,11 +471,11 @@ function openCarDetails(index) {
            <div class="footer-col">
              <h4>Социальные сети</h4>
              <div class="social-links">
-               <a href="#"><i class="fab fa-facebook-f"></i></a>
-               <a href="#"><i class="fab fa-twitter"></i></a>
-               <a href="#"><i class="fab fa-instagram"></i></a>
-               <a href="#"><i class="fab fa-linkedin-in"></i></a>
-             </div>
+                   <a href="https://ru-ru.facebook.com/BMW/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                   <a href="https://www.twitter.com/elonmusk"><i class="fab fa-twitter"></i></a>
+                   <a href="https://www.instagram.com/stifazno"><i class="fab fa-instagram"></i></a>
+                   
+                 </div>
            </div>
          </div>
         </div>
