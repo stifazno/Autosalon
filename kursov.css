@@ -638,3 +638,11 @@ ul{
 }
 
 
+#name{
+    display: flex;
+    justify-content: center;
+    height: 4em;
+    align-items: end;
+    color: rgba(0, 212, 255, 0.9);
+}
+
